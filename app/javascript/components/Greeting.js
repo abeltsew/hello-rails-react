@@ -1,20 +1,10 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function Greeting() {
-  const [greeting, setGreeting] = useState([]);
-
-  const getGreeting = async () => {
-    const greeting = await axios.get('/random');
-    setGreeting(greeting.data);
-  };
-
-  useEffect(() => {
-    getGreeting();
-  }, []);
-
+  const greeting = useSelector((store) => store.greeting);
   return (
     <div>
+      <h1>Greetings</h1>
       <pre>{JSON.stringify(greeting, null, 2)}</pre>
     </div>
   );
