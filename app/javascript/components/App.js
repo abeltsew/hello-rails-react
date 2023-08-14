@@ -5,7 +5,7 @@ import Greeting from './Greeting';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Hello world!</div>,
+    element: <div>Hello react world!</div>,
   },
   {
     path: '/greeting',

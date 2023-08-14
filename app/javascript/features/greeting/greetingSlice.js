@@ -1,15 +1,15 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { stat } from 'fs';
+import axios from 'axios';
 
 const initialState = {
   greeting: {},
   isLoading: false,
-  hasError: undefined,
+  error: undefined,
 };
 
-const getGreeting = createAsyncThunk('greeting/random', async () => {
-  const greeting = await axios.get('/random');
-  return await greeting.json();
+export const getGreeting = createAsyncThunk('greeting/random', async () => {
+  const greeting = await axios.get('http://localhost:3000/random');
+  return await greeting.data;
 });
 
 const greetingSlice = createSlice({
@@ -22,6 +22,11 @@ const greetingSlice = createSlice({
     builder.addCase(getGreeting.fulfilled, (state, action) => {
       state.isLoading = false;
       state.greeting = action.payload;
+    });
+    builder.addCase(getGreeting.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+      console.log(action);
     });
   },
 });
