@@ -8,7 +8,7 @@
 
 - [Rich Dad Wallet](#rich_dad_wallet)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Rich Dad Wallet](#-Rich_dad_wallet-)
+- [📖 React and Rails](#-React and Rails-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Rich Dad Wallet App <a name="about-project"></a>
+# 📖 React and Rails App <a name="about-project"></a>
 
-**Rich Dad Wallet App** is a clever app that lets you track of your items in a ballance Sheet
+**React and Rails App** is a clever app that lets you track of your items in a ballance Sheet
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,17 +47,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo](https://rich-dad-wallet.onrender.com/)
-
 <!-- Presentation -->
-
-## Video Presentation <a name="video"></a>
-
--[Presentation Video](https://www.loom.com/share/ef00a23a4ba84ccf955c2a36cf54e428?sid=9a56c2dd-cf9a-4140-bf2f-c57689ab9726)
 
 <!-- GETTING STARTED -->
 
@@ -79,8 +69,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/abeltsew/rich_dad_wallet.git
-  cd rich_dad_wallet
+  git clone https://github.com/abeltsew/helo-rails-react.git
+  cd folder
 ```
 
 <!-- ### Install -->
@@ -89,6 +79,10 @@ Install this project with:
 
 ```
 bundle install
+```
+
+```
+rails db:seed
 ```
 
 ### Usage
@@ -144,8 +138,6 @@ If you like this project please give it a ⭐️!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [Microverse](https://bit.ly/MicroverseTN).
-
-This Project design is adobted based on the Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
